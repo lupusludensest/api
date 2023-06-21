@@ -8,6 +8,7 @@ r = requests.get('https://httpbin.org/get', params=payload)
 
 print(r.content)  # raw response as bytes
 print(r.text) # decoded response
+print(r.url) # url of the response
 
 if r.status_code == 200:
     print(f"PASS_STATUS = {r.status_code}")
