@@ -4,7 +4,7 @@ payload = {
         'key1': 'value1',
         'key2': 'value2'
 }
-r = requests.post('https://httpbin.org/post', data=payload)
+r = requests.post('https://httpbin.org/post/lol', data=payload)
 
 print(r.content)  # raw response as bytes
 print(r.text) # decoded response
